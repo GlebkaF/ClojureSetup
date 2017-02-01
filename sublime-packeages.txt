@@ -1,0 +1,3 @@
+paredit
+all autocomplete
+sublime code intel

@@ -1,0 +1,24 @@
+[
+	{ "keys": ["home"], "command": "move_to", "args": {"to": "bol"} },
+{ "keys": ["end"], "command": "move_to", "args": {"to": "eol"} },
+{ "keys": ["shift+end"], "command": "move_to", "args": {"to": "eol", "extend": true} },
+{ "keys": ["shift+home"], "command": "move_to", "args": {"to": "bol", "extend": true } },
+{ "keys": ["ctrl+alt+super+v"], "command": "bh_toggle_high_visibility"  },
+{ "keys": ["f1"], "command": "goto_definition" },
+  {
+        "keys": ["ctrl+alt+super+d"],
+        "command": "bh_key",
+        "args":
+        {
+            "no_outside_adj": null,
+            "lines" : true,
+            "plugin":
+            {
+                "type": ["__all__"],
+                "command": "bh_modules.bracketselect",
+                "args": {"always_include_brackets": true}
+            }
+        }
+    },
+
+]
